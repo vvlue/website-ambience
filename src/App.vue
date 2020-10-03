@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/deepfry.png">
-    <img alt="Vue logo" src="./assets/warp.png">
+    <img alt="livi" src="./assets/deepfry.png">
+    <img alt="dean" src="./assets/warp.png">
+    <img alt="smir" src="./assets/brazzers.png">
     <Home />
   </div>
 </template>
