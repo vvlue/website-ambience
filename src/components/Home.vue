@@ -3,7 +3,7 @@
   <div class="hello">
     <!-- <img alt="Vue logo" src="./assets/magik.png"> -->
     <i>
-      pog family
+      pog family by pan
     </i>
   </div>
 </template>
