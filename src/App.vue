@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img alt="livi" src="./assets/deepfry.png">
-    <img alt="dean" src="./assets/warp.png">
-    <img alt="smir" src="./assets/brazzers.png">
+    <img alt="poggers" src="./assets/poggers_married.png">
+    
     <Home />
   </div>
 </template>

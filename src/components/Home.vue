@@ -1,8 +1,9 @@
+<!-- to run website for development "npm run serve" and open at localhost:8080" -->
 <template>
   <div class="hello">
     <!-- <img alt="Vue logo" src="./assets/magik.png"> -->
     <i>
-      hi livi hi dean
+      pog family
     </i>
   </div>
 </template>
