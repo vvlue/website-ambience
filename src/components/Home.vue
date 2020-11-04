@@ -1,8 +1,8 @@
 <!-- to run website for development "npm run serve" and open at localhost:8080" -->
 <template>
   <v-parallax
-    height="900"
-    src="/Users/naymugo/Desktop/website-test/src/assets/street.jpg"
+    height="1000"
+    src="../assets/street.jpg"
     alt="musician in a street"
   >
   </v-parallax>
