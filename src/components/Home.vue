@@ -1,16 +1,16 @@
 <!-- to run website for development "npm run serve" and open at localhost:8080" -->
 <template>
-  <div class="hello">
-    <!-- <img alt="Vue logo" src="./assets/magik.png"> -->
-    <i>
-      pog family by pan
-    </i>
-  </div>
+  <v-parallax
+    height="900"
+    src="/Users/naymugo/Desktop/website-test/src/assets/street.jpg"
+  >
+  </v-parallax>
+  
 </template>
-
 <script>
+ 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   props: {
     msg: String
   }
