@@ -1,12 +1,10 @@
 <!-- to run website for development "npm run serve" and open at localhost:8080" -->
 <template>
-  
   <v-parallax
     height="1145"
     src="../assets/street.jpg"
     alt="musician in a street"
   >
-  <Main v-model="showMain" @added="$emit('refresh')" />
   <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
         <h1 class="display-1 font-weight-thin mb-4">
@@ -17,8 +15,8 @@
         </h4>
         <v-spacer />
         <v-col cols="12" class="text-center">
-        <v-btn @click="showMain = true">
-          fkn stupid button that doesnt work for some reason fk you
+        <v-btn>
+          Vibe
         </v-btn>
         </v-col>
       </v-col>
@@ -28,26 +26,11 @@
 </template>
 <script>
  
- import Main from '@/components/Home.vue'
-
 export default {
-  name: 'Home',
+  name: 'Main',
   props: {
     msg: String
-  },
-  components: {
-    Main
-  },
-  data() {
-    return {
-      showMain: false,
-    }
-  },
-  // methods: {
-  //   showMain() {
-  //     this.showMain = true
-  //   }
-  // }
+  }
 }
 </script>
 
