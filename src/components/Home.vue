@@ -3,6 +3,7 @@
   <v-parallax
     height="900"
     src="/Users/naymugo/Desktop/website-test/src/assets/street.jpg"
+    alt="musician in a street"
   >
   </v-parallax>
   
