@@ -17,15 +17,9 @@
         </h4>
         <v-spacer />
         <v-col cols="12" class="text-center">
-        <!-- <v-btn @click="showMain = true">
-          fkn stupid button that doesnt work for some reason fk you
-        </v-btn> -->
-        <!-- <v-btn @click="" raised >
+        <!-- <v-btn href="https://bit.ly/33JnUaY" >
           vibe
         </v-btn> -->
-        <v-btn href="https://bit.ly/33JnUaY" >
-          vibe
-        </v-btn>
         </v-col>
       </v-col>
     </v-row>
