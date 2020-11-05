@@ -45,31 +45,31 @@
     <!-- responsive -->
     <v-row align="center">
         <v-col class="text-center" cols="12">
-        <v-card
-          class="mx-auto"
-          max-width="450"
-        >
-          <v-card-title>
-            Ambience
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-            Nunc vel mollis est. Quisque quis euismod lacus. 
-            Morbi a consequat lectus. 
-            Pellentesque id imperdiet ex. 
-            Sed lacinia massa et turpis dapibus feugiat. 
-            Nullam quis molestie sapien. Maecenas venenatis volutpat congue. 
-            In hac habitasse platea dictumst. <br>
-            Suspendisse sit amet egestas nisl, non ullamcorper dolor. 
-            Sed nisl leo, varius vel metus sit amet, viverra semper elit. 
-            Fusce aliquam condimentum erat, vel pellentesque tellus rhoncus vitae. 
-            Fusce in arcu hendrerit, luctus nibh sit amet, finibus lacus. 
-            Praesent sit amet euismod leo. 
-            Vivamus arcu ante, fringilla tempor semper ut, semper non est. <br>
-            Aenean volutpat dui a velit auctor, at interdum lacus consectetur. 
-            Ut ex augue, varius a hendrerit eu, interdum at mauris.
-          </v-card-text>
-        </v-card>
+          <v-card
+            class="mx-auto"
+            max-width="450"
+          >
+            <v-card-title>
+              Ambience
+            </v-card-title>
+            <v-card-text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+              Nunc vel mollis est. Quisque quis euismod lacus. 
+              Morbi a consequat lectus. 
+              Pellentesque id imperdiet ex. 
+              Sed lacinia massa et turpis dapibus feugiat. 
+              Nullam quis molestie sapien. Maecenas venenatis volutpat congue. 
+              In hac habitasse platea dictumst. <br>
+              Suspendisse sit amet egestas nisl, non ullamcorper dolor. 
+              Sed nisl leo, varius vel metus sit amet, viverra semper elit. 
+              Fusce aliquam condimentum erat, vel pellentesque tellus rhoncus vitae. 
+              Fusce in arcu hendrerit, luctus nibh sit amet, finibus lacus. 
+              Praesent sit amet euismod leo. 
+              Vivamus arcu ante, fringilla tempor semper ut, semper non est. <br>
+              Aenean volutpat dui a velit auctor, at interdum lacus consectetur. 
+              Ut ex augue, varius a hendrerit eu, interdum at mauris.
+            </v-card-text>
+          </v-card>
   
     <!-- <Main v-model="showMain" @added="$emit('refresh')" /> -->
     
@@ -107,9 +107,9 @@
         cols="12"
       >
         Copyright © {{ new Date().getFullYear() }} — <strong>Naya Mugot</strong> — 
-        <v-btn icon class="mx-4 white--text" color="brown lighten-1"> 
+        <v-btn @click="openfeedback" icon class="mx-4 white--text" color="brown lighten-1"> 
           <v-icon>
-            mdi-twitter
+            mdi-email-newsletter
           </v-icon>
         </v-btn>
         
@@ -133,10 +133,15 @@ export default {
         items: [
           'Pop', 'RnB', 'Classical', 'Jazz',
         ],
-        
-        
       }
     },
+  methods: {
+    openfeedback() {
+      window.open(
+      "https://forms.gle/zUECEJZpWBX4KsVn7"
+      )
+    }
+  }
     
   // components: {
   //   Main
