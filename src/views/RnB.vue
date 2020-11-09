@@ -74,7 +74,7 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="10">
-                        Rnb, sometimes known as R&B, stands for rhythmn and beats. Originating from 
+                        Rnb, sometimes known as R&B, stands for rhythmn and blues. Originating from 
                         African American comunities in the 1940s. It is now a mainstream genre that is a hybrid of RnB an HipHop.
                         With artists like Joji, Khalis, SZA, topping the charts RnB has become more than just sound but how vocals 
                         can make you feel. 
