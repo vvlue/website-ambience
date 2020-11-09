@@ -73,7 +73,7 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="10">
-                        When we think of the fiftys we think, retro, vintage,
+                        When we think of the fiftys we may think, retro, vintage,
                         Elvis Presley and so on. Fifty's Music however was more
                         than that. It was a time of music that was heavily
                         influenced by rock music as that was also beginning at
