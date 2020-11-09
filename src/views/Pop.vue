@@ -234,8 +234,9 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="10">
-                        2010s Music hits the listener with a wave of Nostalgia. From Lady Gaga to Rihanna, one might say they had an influence on the RnB, Hip Hop and electric sounds 
-                        music during this time had. 
+                        Describing the music today would be a challenge. Thanks to the internet, and the variety of streaming platforms
+                        music has never been as available as it was in the past. There is music for just about everyone. 
+                        From the rise of Kpop to the evolution of Pop Music, there is a vast realm of Music for you to explore.
                       </v-col>
                       <v-col class="hidden-sm-and-down text-right" md="2">
                         <v-icon size="65"> mdi-microphone-variant </v-icon>
