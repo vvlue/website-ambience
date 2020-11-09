@@ -1,4 +1,4 @@
-# website-test
+# website-ambience
 
 ## Project setup
 ```

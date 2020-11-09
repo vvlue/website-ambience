@@ -1,166 +1,72 @@
-<!-- to run website for development "npm run serve" and open at localhost:8080" -->
 <template>
-  <v-app>
-    <v-card color="basil">
-    <v-card-title class="text-center justify-center py-6">
-      <h1 class="font-weight-bold display-3 basil--text">
-        Ambience
-      </h1>
-    </v-card-title>
-    <v-tabs
-      v-model="tab"
-      background-color="basil"
-      centered
-      dark
-      icons-and-text
-    >
-      <v-tabs-slider></v-tabs-slider>
-
-      <v-tab href="#tab-1">
-        Pop
-        <v-icon>mdi-microphone-variant</v-icon>
-      </v-tab>
-
-      <v-tab href="#tab-2">
-        RnB
-        <v-icon>mdi-album</v-icon>
-      </v-tab>
-
-      <v-tab href="#tab-3">
-        Classical
-        <v-icon>mdi-music-clef-bass</v-icon>
-      </v-tab>
-
-      <v-tab href="#tab-4">
-        Classical
-        <v-icon>mdi-music-note</v-icon>
-      </v-tab>
-    </v-tabs>
-    <!-- Start of Parallax -->
-    <v-parallax
-      height="1145"
-      src="../src/assets/street.jpg"
-      alt="musician in a street"
-    >
-    <!-- responsive -->
-    <v-row align="center">
-        <v-col class="text-center" cols="12">
-          <v-card
-            class="mx-auto"
-            max-width="450"
-          >
-            <v-card-title>
-              Ambience
-            </v-card-title>
-            <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-              Nunc vel mollis est. Quisque quis euismod lacus. 
-              Morbi a consequat lectus. 
-              Pellentesque id imperdiet ex. 
-              Sed lacinia massa et turpis dapibus feugiat. 
-              Nullam quis molestie sapien. Maecenas venenatis volutpat congue. 
-              In hac habitasse platea dictumst. <br>
-              Suspendisse sit amet egestas nisl, non ullamcorper dolor. 
-              Sed nisl leo, varius vel metus sit amet, viverra semper elit. 
-              Fusce aliquam condimentum erat, vel pellentesque tellus rhoncus vitae. 
-              Fusce in arcu hendrerit, luctus nibh sit amet, finibus lacus. 
-              Praesent sit amet euismod leo. 
-              Vivamus arcu ante, fringilla tempor semper ut, semper non est. <br>
-              Aenean volutpat dui a velit auctor, at interdum lacus consectetur. 
-              Ut ex augue, varius a hendrerit eu, interdum at mauris.
-            </v-card-text>
-          </v-card>
-  
-    <!-- <Main v-model="showMain" @added="$emit('refresh')" /> -->
-    
-          <!-- <h1 class="display-1 font-weight-thin mb-4">
-            Ambience
-          </h1> -->
-          <!-- <div class="subheading blue-grey--text text--lighten-1">
-            <p>
-            
-            </p>
-          </div> -->
-          <v-spacer />
-          <v-col cols="12" class="text-center">
-          <v-btn href="https://bit.ly/33JnUaY" >
-            vibe
-          </v-btn>
-
-          <!-- <v-btn @click="showMain = true" >
-            vibe
-          </v-btn> -->
-
-          <!-- <v-btn :to="{name: 'Main', params: $route.params}">
-            vibe
-          </v-btn> -->
-          </v-col>
-        </v-col>
-      </v-row>
-    </v-parallax>
-    
-    <v-footer
-      class="font-weight-medium"
-    >
-      <v-col
-        class="text-center"
-        cols="12"
-      >
-        Copyright © {{ new Date().getFullYear() }} — <strong>Naya Mugot</strong> — 
-        <v-btn @click="openfeedback" icon class="mx-4 white--text" color="brown lighten-1"> 
-          <v-icon>
-            mdi-email-newsletter
-          </v-icon>
+  <div id="app">
+    <v-card color="ambience">
+      <div class="text-center justify-center py-6">
+        <v-btn to="/" text>
+          <h2 class="font-weight-bold display-3 ambience--text">ambience</h2>
         </v-btn>
-        
-      </v-col>
-    </v-footer>
+      </div>
+      <!-- <nav>
+        <v-app-bar class="navbar_main">
+          <v-container fluid>
+            <v-row justify="center" align="center" class="navbar_main">
+              <v-toolbar-items>
+                <v-btn to="/rnb" text color="white">
+                  RnB
+                  <v-icon>mdi-album</v-icon>
+                </v-btn>
+
+                <v-btn to="/pop" text color="white">
+                  Pop
+                  <v-icon>mdi-microphone-variant</v-icon>
+                </v-btn>
+
+                <v-btn to="/classical" text color="white">
+                  Classical
+                  <v-icon>mdi-music-clef-treble</v-icon>
+                </v-btn>
+
+                <v-btn to="/lofi" text color="white">
+                  Lofi
+                  <v-icon>mdi-headphones</v-icon>
+                </v-btn>
+              </v-toolbar-items>
+            </v-row>
+          </v-container>
+        </v-app-bar>
+      </nav> -->
     </v-card>
-  </v-app>
+    <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+    <router-view />
+  </div>
+  
 </template>
-<script>
- 
-//  import Main from '@/components/Main.vue'
 
-export default {
-  name: 'App',
-  props: {
-    msg: String
-  },
-  data () {
-      return {
-        tab: null,
-        items: [
-          'Pop', 'RnB', 'Classical', 'Jazz',
-        ],
-      }
-    },
-  methods: {
-    openfeedback() {
-      window.open(
-      "https://forms.gle/zUECEJZpWBX4KsVn7"
-      )
-    }
-  }
-    
-  // components: {
-  //   Main
-  // },
-  // data() {
-  //   return {
-  //     showMain: false,
-  //   }
-  // },
-  // methods: {
-  //   showMain() {
-  //     this.showMain = true
-  //   }
-  // }
+<style lang="scss">
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
 }
-</script>
+// #nav {
+//   position: relative;
+//   box-sizing: border-box;
+//   font-size: 1.2rem;
+//   font-weight: normal;
+//   color: #212121 !important;
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+//   // a {
+//   //   // font-weight: bold;
+//   //   // color: #2c3e50;
+
+//   //   &.router-link-exact-active {
+//   //     color: #42b983;
+//   //   }
+//   // }
+// }
 h3 {
   margin: 40px 0 0;
 }
@@ -176,10 +82,26 @@ a {
   color: #42b983;
 }
 /* Helper classes */
-.basil {
-  background-color: #8D6E63 !important;
+.ambience {
+  background-color: #000 !important;
 }
-.basil--text {
-  color: #3E2723 !important;
+.ambience--text {
+  color: #efebe9 !important;
+}
+/* nav bar */
+.navbar_btn {
+  text-decoration: none;
+  margin: 1rem;
+  color: #212121;
+  padding: 0px;
+  font-size: 1rem;
+  width: 100%;
+}
+.navbar_main {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #212121 !important;
 }
 </style>
