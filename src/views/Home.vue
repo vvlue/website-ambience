@@ -21,8 +21,8 @@
                   <v-icon>mdi-music-clef-treble</v-icon>
                 </v-btn>
 
-                <v-btn to="/lofi" text >
-                  Lofi
+                <v-btn to="/personal" text >
+                  Personal
                   <v-icon>mdi-headphones</v-icon>
                 </v-btn>
               </v-toolbar-items>
@@ -57,28 +57,18 @@
                 <v-card class="mx-auto" max-width="450">
                   <v-card-title> Ambience </v-card-title>
                   <v-card-text>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br />
-                    Nunc vel mollis est. Quisque quis euismod lacus. Morbi a
-                    consequat lectus. Pellentesque id imperdiet ex. Sed lacinia
-                    massa et turpis dapibus feugiat. Nullam quis molestie
-                    sapien. Maecenas venenatis volutpat congue. In hac habitasse
-                    platea dictumst. <br />
-                    Suspendisse sit amet egestas nisl, non ullamcorper dolor.
-                    Sed nisl leo, varius vel metus sit amet, viverra semper
-                    elit. Fusce aliquam condimentum erat, vel pellentesque
-                    tellus rhoncus vitae. Fusce in arcu hendrerit, luctus nibh
-                    sit amet, finibus lacus. Praesent sit amet euismod leo.
-                    Vivamus arcu ante, fringilla tempor semper ut, semper non
-                    est. <br />
-                    Aenean volutpat dui a velit auctor, at interdum lacus
-                    consectetur. Ut ex augue, varius a hendrerit eu, interdum at
-                    mauris.
+                    Ambience is a website that was made to show three different Genres of Music.
+                    It showcases three Genres <b> Pop, RnB and Classical music </b> <br>
+                    It also showcases playlists that Ive made myself
+                    <br>
+                    Press vibe for a surpise 
                   </v-card-text>
                   <v-spacer />
+                  <v-card-actions>
                   <v-col cols="12" class="text-center">
                     <v-btn href="https://bit.ly/33JnUaY"> vibe </v-btn>
                   </v-col>
+                  </v-card-actions>
                 </v-card>
               </v-col>
             </v-row>
@@ -108,6 +98,11 @@
 
 export default {
   name: "App",
+  methods: {
+    openEmail() {
+      window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
+    }
+  }
 };
 </script>
 

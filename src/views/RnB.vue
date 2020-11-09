@@ -21,8 +21,8 @@
                   <v-icon>mdi-music-clef-treble</v-icon>
                 </v-btn>
 
-                <v-btn to="/lofi" text>
-                  Lofi
+                <v-btn to="/personal" text>
+                  Personal
                   <v-icon>mdi-headphones</v-icon>
                 </v-btn>
               </v-toolbar-items>
@@ -59,6 +59,7 @@
             min-height="300"
             transition="fade-transition"
           >
+
             <v-timeline :dense="$vuetify.breakpoint.smAndDown">
               <v-timeline-item color="red darken-3" fill-dot right>
                 <v-card>
@@ -97,7 +98,7 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="8">
-                        This is a playlist of Fiftys Music made by Spotify
+                        This is a playlist of RnB Music
                       </v-col>
                       <v-btn
                         @click="openRnb"
@@ -106,8 +107,6 @@
                       >
                         Open
                       </v-btn>
-                      <!-- <v-btn href="https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq?si=qdlGjhowSF6JN1AquPYT-Q" color="orange darken-3" class="mx-0 white--text" > Open </v-btn> -->
-                      <!-- <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWSV3Tk4GO2fq" width="100" height="180" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> -->
                     </v-row>
                   </v-container>
                 </v-card>
@@ -133,31 +132,10 @@
 </template>
 <script>
 export default {
-  //   data: () => ({
-  //     items: [
-  //       {
-  //         color: "red darken-3",
-  //         icon: "mdi-star",
-  //         text: "test",
-  //       },
-  //       {
-  //         color: "orange darken-3",
-  //         icon: "mdi-book-variant",
-  //       },
-  //       //   {
-  //       //     color: "green lighten-1",
-  //       //     icon: "mdi-airballoon",
-  //       //   },
-  //       //   {
-  //       //     color: "indigo",
-  //       //     icon: "mdi-buffer",
-  //       //   },
-  //     ],
-  //   }),
   methods: {
     openRnb() {
       window.open(
-        "https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq?si=tVeJx_GmT4mDPi7MkmxvvA"
+        "https://open.spotify.com/playlist/37i9dQZF1DX7J2y2eWxEnR?si=augBAQFyQjKY56SjBPkKSg"
       );
     },
     open2000() {
@@ -166,7 +144,10 @@ export default {
   },
   openNow() {
       window.open("https://open.spotify.com/playlist/7lzNssRRKejqMBtiJH5JNI?si=yXGjl0dLTT2B7t0BxZqA_w")
-  }
+  },
+  openEmail() {
+      window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
+    }
 };
 </script>
 <style scoped>

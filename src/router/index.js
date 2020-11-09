@@ -35,9 +35,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Classical.vue')
   },
   {
-    path: '/lofi',
-    name: 'Lofi',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Lofi.vue')
+    path: '/personal',
+    name: 'Personal',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Personal.vue')
   },
 ]
 
