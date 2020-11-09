@@ -122,7 +122,7 @@
       <!-- break -->
       <v-parallax height="100" src="../assets/blue.jpg" alt="teal background">
       <v-card-text>
-          2000s Music
+          2010s Music
       </v-card-text>
       </v-parallax>
       
@@ -158,7 +158,7 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="10">
-                        2000s Music hits the listener with a wave of Nostalgia. From Lady Gaga to Rihanna, one might say they had an influence on the RnB, Hip Hop and electric sounds 
+                        2010s Music hits the listener with a wave of Nostalgia. From Lady Gaga to Rihanna, one might say they had an influence on the RnB, Hip Hop and electric sounds 
                         music during this time had. 
                       </v-col>
                       <v-col class="hidden-sm-and-down text-right" md="2">
@@ -234,7 +234,7 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" md="10">
-                        2000s Music hits the listener with a wave of Nostalgia. From Lady Gaga to Rihanna, one might say they had an influence on the RnB, Hip Hop and electric sounds 
+                        2010s Music hits the listener with a wave of Nostalgia. From Lady Gaga to Rihanna, one might say they had an influence on the RnB, Hip Hop and electric sounds 
                         music during this time had. 
                       </v-col>
                       <v-col class="hidden-sm-and-down text-right" md="2">

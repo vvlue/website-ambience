@@ -68,7 +68,16 @@
                         and still continues to influence music today. 
                       </v-col>
                       <v-col class="hidden-sm-and-down text-right" md="2">
+                      <v-tooltip bottom>
+                        <template v-slot:activator="{ on, attrs }">
+                        <v-btn @click="openDean" icon v-bind="attrs" v-on="on">
                         <v-icon size="65"> mdi-metronome</v-icon>
+                        </v-btn>
+                        
+                        </template>
+                        <span>Credits to Dean</span>
+                      </v-tooltip>
+                      
                       </v-col>
                     </v-row>
                   </v-container>
@@ -126,12 +135,11 @@ export default {
       );
     },
 
-    openNow() {
+    openDean() {
       window.open(
-        "https://open.spotify.com/playlist/7lzNssRRKejqMBtiJH5JNI?si=yXGjl0dLTT2B7t0BxZqA_w"
+        "https://tenor.com/view/eyes-dancing-potato-potato-dance-cool-gif-12315869"
       );
     },
-
     openEmail() {
       window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
     }
