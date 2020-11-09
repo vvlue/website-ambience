@@ -2,45 +2,49 @@
 <template>
   <v-app>
     <nav>
-        <v-app-bar class="navbar_main">
-          <v-container fluid>
-            <v-row justify="center" align="center" class="navbar_main">
-              <v-toolbar-items>
-                <v-btn to="/rnb" text >
-                  RnB
-                  <v-icon>mdi-album</v-icon>
-                </v-btn>
+      <v-app-bar class="navbar_main">
+        <v-container fluid>
+          <v-row justify="center" align="center" class="navbar_main">
+            <v-toolbar-items>
+              <v-btn to="/rnb" text>
+                RnB
+                <v-icon>mdi-album</v-icon>
+              </v-btn>
 
-                <v-btn to="/pop" text >
-                  Pop
-                  <v-icon>mdi-microphone-variant</v-icon>
-                </v-btn>
+              <v-btn to="/pop" text>
+                Pop
+                <v-icon>mdi-microphone-variant</v-icon>
+              </v-btn>
 
-                <v-btn to="/classical" text >
-                  Classical
-                  <v-icon>mdi-music-clef-treble</v-icon>
-                </v-btn>
+              <v-btn to="/classical" text>
+                Classical
+                <v-icon>mdi-music-clef-treble</v-icon>
+              </v-btn>
 
-                <v-btn to="/personal" text >
-                  Personal
-                  <v-icon>mdi-headphones</v-icon>
-                </v-btn>
-              </v-toolbar-items>
-            </v-row>
-          </v-container>
-        </v-app-bar>
-      </nav>
+              <v-btn to="/personal" text>
+                Personal
+                <v-icon>mdi-headphones</v-icon>
+              </v-btn>
+            </v-toolbar-items>
+          </v-row>
+        </v-container>
+      </v-app-bar>
+    </nav>
     <v-card>
       <v-parallax
         height="1145"
         src="../assets/street.jpg"
         alt="musician in a street"
       >
-      <v-responsive min-height="70vh"></v-responsive>
-      
+        <v-responsive min-height="70vh"></v-responsive>
+
         <v-responsive class="overflow-y-auto" max-height="1145">
-          
           <!-- Start if scroll down -->
+
+          <v-col class="text-center" cols="12">
+              <h1 class="display-1 font-weight-thin mb-4">ambience</h1>
+              <h4 class="subheading">a website for music</h4>
+            </v-col>
 
           <v-lazy
             v-model="isActive"
@@ -50,24 +54,26 @@
             min-height="300"
             transition="fade-transition"
           >
+            
+
             <!-- this is for rachel you big fat white nasty smelling fatt bitch. why you take me off the mf schedule with your trifling dirty white racist ass big fat bicth oompa loompa body ass bitch. -->
             <!-- Content goes here -->
             <v-row align="center" justify="center">
               <v-col class="text-center" cols="12">
                 <v-card class="mx-auto" max-width="450">
-                  <v-card-title> Ambience </v-card-title>
                   <v-card-text>
-                    Ambience is a website that was made to show three different Genres of Music.
-                    It showcases three Genres <b> Pop, RnB and Classical music </b> <br>
+                    Ambience is a website that was made to show three different
+                    Genres of Music. It showcases three Genres
+                    <b> Pop, RnB and Classical music </b> <br />
                     It also showcases playlists that Ive made myself
-                    <br>
-                    Press vibe for a surpise 
+                    <br />
+                    Press vibe for a surpise
                   </v-card-text>
                   <v-spacer />
                   <v-card-actions>
-                  <v-col cols="12" class="text-center">
-                    <v-btn href="https://bit.ly/33JnUaY"> vibe </v-btn>
-                  </v-col>
+                    <v-col cols="12" class="text-center">
+                      <v-btn href="https://bit.ly/33JnUaY"> vibe </v-btn>
+                    </v-col>
                   </v-card-actions>
                 </v-card>
               </v-col>
@@ -85,7 +91,7 @@
         <v-col class="text-center" cols="12">
           Copyright © {{ new Date().getFullYear() }} —
           <strong>Naya Mugot</strong> —
-          <v-btn icon class="mx-4 white--text" color="brown lighten-1">
+          <v-btn icon class="mx-4 white--text" color="brown lighten-1" @click="openEmail">
             <v-icon> mdi-email-newsletter </v-icon>
           </v-btn>
         </v-col>
@@ -95,14 +101,13 @@
 </template>
 
 <script>
-
 export default {
   name: "App",
   methods: {
     openEmail() {
-      window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
-    }
-  }
+      window.open("https://forms.gle/7412ncHUmyRz5Fhc9");
+    },
+  },
 };
 </script>
 

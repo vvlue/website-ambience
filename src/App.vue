@@ -2,10 +2,11 @@
   <div id="app">
     <v-card color="ambience">
       <div class="text-center justify-center py-6">
-        <v-btn to="/" text>
-          <h2 class="font-weight-bold display-3 ambience--text">ambience</h2>
+        <v-btn to="/" text x-large block>
+          <h1 class="font-weight-bold display-3 ambience--text">ambience</h1>
         </v-btn>
       </div>
+      
       <!-- <nav>
         <v-app-bar class="navbar_main">
           <v-container fluid>

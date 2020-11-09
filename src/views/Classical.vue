@@ -134,7 +134,6 @@ export default {
         "https://open.spotify.com/playlist/3Bo22UXkyga7XpzN3xTdjU?si=h09Bihz3RR-M3odZUb2r1Q"
       );
     },
-
     openDean() {
       window.open(
         "https://tenor.com/view/eyes-dancing-potato-potato-dance-cool-gif-12315869"

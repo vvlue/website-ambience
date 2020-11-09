@@ -196,7 +196,7 @@
       <v-col class="text-center" cols="12">
         Copyright © {{ new Date().getFullYear() }} —
         <strong>Naya Mugot</strong> —
-        <v-btn icon class="mx-4 white--text" color="brown lighten-1">
+        <v-btn icon class="mx-4 white--text" color="brown lighten-1" @click="openEmail">
           <v-icon> mdi-email-newsletter </v-icon>
         </v-btn>
       </v-col>
@@ -226,22 +226,23 @@ export default {
   //       //   },
   //     ],
   //   }),
-  methods: {
-    openFiftys() {
-      window.open(
-        "https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq?si=tVeJx_GmT4mDPi7MkmxvvA"
-      );
-    },
-    open2000() {
-        window.open("https://open.spotify.com/album/0IpuHl2S3rACtra5VzOfFr?si=IGOszNrPR0iK73rbDQy4eQ")
-    }
-  },
-  openNow() {
-      window.open("https://open.spotify.com/playlist/7lzNssRRKejqMBtiJH5JNI?si=yXGjl0dLTT2B7t0BxZqA_w")
-  },
-  openEmail() {
-      window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
-    }
+  // methods: {
+  //   openFiftys() {
+  //     window.open(
+  //       "https://open.spotify.com/playlist/37i9dQZF1DWSV3Tk4GO2fq?si=tVeJx_GmT4mDPi7MkmxvvA"
+  //     );
+  //   },
+  //   open2000() {
+  //       window.open("https://open.spotify.com/album/0IpuHl2S3rACtra5VzOfFr?si=IGOszNrPR0iK73rbDQy4eQ")
+  //   },
+  //   openNow() {
+  //     window.open("https://open.spotify.com/playlist/7lzNssRRKejqMBtiJH5JNI?si=yXGjl0dLTT2B7t0BxZqA_w")
+  // },
+  // openEmail() {
+  //     window.open("https://forms.gle/7412ncHUmyRz5Fhc9")
+  //   }
+  // },
+  
 };
 </script>
 <style scoped>
